@@ -15,7 +15,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   background-color: var(--background);
 }
 
@@ -33,6 +32,8 @@ body {
   left: 0;
   width: 100%;
   padding: 10px 0;
+  z-index: 10;
+  box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header .container {
@@ -60,6 +61,7 @@ body {
   color: var(--dark-text);
   font-size: 24px;
   transition: color 0.4s;
+  font-weight: 500;
 }
 
 .header-item:nth-child(1):hover .header-link {
@@ -84,7 +86,7 @@ body {
 
 .header-sublist {
   position: absolute;
-  top: 41px;
+  top: 56px;
   left: 0;
   width: 234px;
   display: flex;
@@ -92,6 +94,9 @@ body {
   gap: 8px;
   opacity: 0;
   transition: opacity 0.4s;
+  background-color: var(--background);
+  padding: 8px;
+  box-shadow: 0px 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header-item:nth-child(5):hover .header-sublist {
@@ -108,6 +113,7 @@ body {
   width: 234px;
   overflow-wrap: break-word;
   transition: color 0.4s;
+  font-weight: 500;
 }
 
 .header-sublink:hover {
@@ -130,6 +136,7 @@ body {
   font-weight: 500;
   line-height: normal;
   width: 577px;
+  font-weight: 500;
 }
 
 .hero-desc {
@@ -137,6 +144,7 @@ body {
   font-size: 28px;
   margin-top: 12px;
   margin-bottom: 48px;
+  font-weight: 500;
 }
 
 .hero-btn {
@@ -153,6 +161,7 @@ body {
 .hero-text {
   color: var(--light);
   font-size: 28px;
+  font-weight: 500;
 }
 
 .hero-icon {
@@ -164,4 +173,63 @@ body {
 
 .hero-btn:hover .hero-icon {
   transform: scale(1.23);
+}
+
+.categories {
+  padding: 120px 0 60px;
+}
+
+.categories-title {
+  color: var(--dark-text);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 84px;
+}
+
+.categories-item {
+}
+
+.categories-link {
+  position: relative;
+  overflow: hidden;
+  width: 184px;
+  height: 209px;
+  display: block;
+}
+
+.categories-icon {
+  display: block;
+}
+
+.categories-caption {
+  position: absolute;
+  bottom: -58px;
+  width: 100%;
+  left: 0;
+  padding: 0 auto;
+  width: 184px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--btn-bg);
+  backdrop-filter: blur(3px);
+  transition: transform 0.4s;
+}
+
+.categories-link:hover .categories-caption {
+  transform: translate(0, -100%);
+}
+
+.categories-subtitle {
+  color: var(--light);
+  font-size: 28px;
+  font-weight: 500;
 }
