@@ -1,4 +1,115 @@
+:root {
+  --background: #e8dec4;
+  --dark-text: #21201e;
+  --secondary-text: rgba(33, 32, 30, 0.7);
+  --btn-bg: rgba(33, 32, 30, 0.3);
+  --btn-bg-hover: rgba(33, 32, 30, 0.7);
+  --light: #fff;
+  --light-bg: rgba(255, 255, 255, 0.5);
+  --light-bg-hover: rgba(255, 255, 255, 0.8);
+  --accent-yellow: #dda71d;
+  --accent-red: #dd1d1d;
+  --accent-purple: #dd1da7;
+  --accent-rose: #dd1d79;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  background-color: var(--background);
+}
+
+.container {
+  width: 1264px;
+  padding: 0 20px;
+  outline: 3px dashed darkblue;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0 20px;
+}
+
+.header .container {
+  display: flex;
+  gap: 178px;
+  align-items: center;
+}
+
+.header-logo {
+}
+
+.header-icon {
+}
+
+.header-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-item {
+  position: relative;
+}
+
+.header-link {
+  color: var(--dark-text);
+  font-size: 24px;
+  transition: color 0.4s;
+}
+
+.header-item:nth-child(1):hover .header-link {
+  color: var(--accent-yellow);
+}
+
+.header-item:nth-child(2):hover .header-link {
+  color: var(--accent-red);
+}
+
+.header-item:nth-child(3):hover .header-link {
+  color: var(--accent-purple);
+}
+
+.header-item:nth-child(4):hover .header-link {
+  color: var(--accent-rose);
+}
+
+.header-item:nth-child(5):hover .header-link {
+  color: var(--accent-yellow);
+}
+
+.header-sublist {
+  position: absolute;
+  top: 41px;
+  left: 0;
+  width: 234px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.header-item:nth-child(5):hover .header-sublist {
+  opacity: 1;
+}
+
+.header-subitem {
+}
+
+.header-sublink {
+  color: var(--secondary-text);
+  font-size: 24px;
+  display: block;
+  width: 234px;
+  overflow-wrap: break-word;
+  transition: color 0.4s;
+}
+
+.header-sublink:hover {
+  color: var(--dark-text);
 }
