@@ -22,7 +22,7 @@ body {
 .container {
   width: 1264px;
   padding: 0 20px;
-  outline: 3px dashed darkblue;
+  /* outline: 3px dashed darkblue; */
   margin: 0 auto;
 }
 
@@ -112,4 +112,56 @@ body {
 
 .header-sublink:hover {
   color: var(--dark-text);
+}
+
+.hero {
+  padding: 165px 0 164px;
+  background-image: url(../svg/hero-bg.svg);
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+}
+
+.hero-title {
+  color: var(--dark-text, #21201e);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 577px;
+}
+
+.hero-desc {
+  color: var(--light);
+  font-size: 28px;
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+.hero-btn {
+  padding: 16px 57px;
+  position: relative;
+  background-color: var(--btn-bg);
+  transition: background-color 0.4s;
+}
+
+.hero-btn:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.hero-text {
+  color: var(--light);
+  font-size: 28px;
+}
+
+.hero-icon {
+  position: absolute;
+  right: 4px;
+  bottom: -7px;
+  transition: transform 0.4s;
+}
+
+.hero-btn:hover .hero-icon {
+  transform: scale(1.23);
 }
