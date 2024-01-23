@@ -110,7 +110,6 @@ body {
   color: var(--secondary-text);
   font-size: 24px;
   display: block;
-  width: 234px;
   overflow-wrap: break-word;
   transition: color 0.4s;
   font-weight: 500;
@@ -172,7 +171,7 @@ body {
 }
 
 .hero-btn:hover .hero-icon {
-  transform: scale(1.23);
+  transform: scale(1.23) rotate(360deg);
 }
 
 .categories {
