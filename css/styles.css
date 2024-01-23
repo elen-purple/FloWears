@@ -21,7 +21,7 @@ body {
 .container {
   width: 1264px;
   padding: 0 20px;
-  /* outline: 3px dashed darkblue; */
+  outline: 3px dashed darkblue;
   margin: 0 auto;
 }
 
@@ -231,4 +231,54 @@ body {
   color: var(--light);
   font-size: 28px;
   font-weight: 500;
+}
+
+.advans {
+  padding: 60px 0;
+}
+
+.advans-title {
+  color: var(--dark-text);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.advans-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advans-item {
+  background-color: var(--light-bg);
+  width: 288px;
+  padding: 28px 24px;
+  position: relative;
+  transition: transform 0.4s, background-color 0.4s;
+  z-index: 1;
+}
+
+.advans-item:hover {
+  background-color: var(--light-bg-hover);
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.advans-subtitle {
+  color: var(--dark-text);
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.advans-desc {
+  color: var(--secondary-text);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.advans-icon {
+  position: absolute;
+  top: -18px;
+  right: -18px;
 }
