@@ -282,3 +282,64 @@ body {
   top: -18px;
   right: -18px;
 }
+
+.about {
+  padding: 60px 0;
+}
+
+.about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-wrap {
+  width: 600px;
+}
+
+.about-title {
+  color: var(--dark-text);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.about-desc {
+  color: var(--secondary-text);
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+
+.about-link {
+  display: block;
+  padding: 16px 57px;
+  background: var(--btn-bg);
+  width: max-content;
+  position: relative;
+  transition: background-color 0.4s;
+}
+
+.about-link:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.about-text {
+  color: var(--light);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.about-flower {
+  position: absolute;
+  right: 4px;
+  bottom: -7px;
+  transition: transform 0.4s;
+}
+
+.about-link:hover .about-flower {
+  transform: scale(1.23) rotate(360deg);
+}
+
+.about-icon {
+}
