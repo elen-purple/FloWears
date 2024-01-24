@@ -155,7 +155,7 @@
         <div class="container">
           <h1 class="hero-title">Онлайн-магазин одягу для жінок</h1>
           <p class="hero-desc">Купуйте жіночий одяг онлайн</p>
-          <button class="hero-btn" type="button">
+          <button data-modal-open class="hero-btn" type="button">
             <p class="hero-text">Купити</p>
             <svg
               class="hero-icon"
@@ -491,10 +491,10 @@
         </div>
       </section>
     </main>
-    <div class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <form class="modal-form">
-          <button class="modal-close" type="button">
+          <button data-modal-close class="modal-close" type="button">
             <svg class="modal-dagger" width="22" height="22">
               <use href="./svg/icons.svg#close"></use>
             </svg>
@@ -570,5 +570,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
