@@ -623,3 +623,99 @@ body {
 .shops-item:nth-child(4) .shops-link {
   color: var(--accent-rose);
 }
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contacts {
+}
+
+.footer-logo {
+  margin-bottom: 12px;
+}
+
+.footer-icon {
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-item {
+}
+
+.footer-text {
+  color: var(--dark-text);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.footer-contact {
+  color: var(--secondary-text);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.footer-contact:hover {
+  text-decoration: underline;
+}
+
+.footer-medias {
+  display: flex;
+  flex-wrap: wrap;
+  width: 112px;
+  height: 112px;
+  gap: 24px;
+}
+
+.footer-media {
+}
+
+.footer-link {
+}
+
+.footer-icon {
+  transition: fill 0.4s, transform 0.4s;
+  fill: var(--secondary-text);
+}
+
+.footer-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-media:nth-child(1):hover .footer-icon {
+  fill: var(--accent-yellow);
+}
+
+.footer-media:nth-child(2):hover .footer-icon {
+  fill: var(--accent-red);
+}
+
+.footer-media:nth-child(3):hover .footer-icon {
+  fill: var(--accent-purple);
+}
+
+.footer-media:nth-child(4):hover .footer-icon {
+  fill: var(--accent-rose);
+}
+
+.footer-copyright {
+  color: var(--secondary-text);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+  text-align: center;
+  padding-top: 28px;
+  border-top: var(--btn-bg) 3px solid;
+  margin-top: 48px;
+}
