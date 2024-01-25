@@ -624,6 +624,36 @@ body {
   color: var(--accent-rose);
 }
 
+.shops-btn {
+  padding: 16px 57px;
+  position: relative;
+  background-color: var(--btn-bg);
+  transition: background-color 0.4s;
+  margin: 60px auto 0;
+  display: block;
+}
+
+.shops-btn:hover {
+  background-color: var(--btn-bg-hover);
+}
+
+.shops-info {
+  color: var(--light);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.shops-icon {
+  position: absolute;
+  right: 4px;
+  bottom: -7px;
+  transition: transform 0.4s;
+}
+
+.shops-btn:hover .shops-icon {
+  transform: scale(1.23) rotate(360deg);
+}
+
 .footer {
   padding: 60px 0;
 }
