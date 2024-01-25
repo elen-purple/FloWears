@@ -26,7 +26,7 @@ body {
 .container {
   width: 1264px;
   padding: 0 20px;
-  outline: 3px dashed darkblue;
+  /* outline: 3px dashed darkblue; */
   margin: 0 auto;
 }
 
